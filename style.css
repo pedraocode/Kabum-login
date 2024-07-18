@@ -1,0 +1,196 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.prin {
+    max-width: 100%;
+    width: 550px;
+    padding-top: 20px;
+}
+
+.login-form {
+    max-width: 380px;
+    width: 100%;
+}
+
+h1 {
+    color: rgb(255, 96, 39);
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+}
+
+.line {
+    border: 3px solid rgb(43, 77, 209);
+    width: 110px;
+    margin-top: -25px;
+    margin-bottom: 30px;
+}
+
+.cylindrical-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    border: 1px solid rgb(86, 92, 105);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button1,
+.button2 {
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 3px;
+}
+
+.button1 {
+    background-color: rgb(255, 96, 39);
+    color: white;
+    border: none;
+}
+
+.button2 {
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+}
+
+input {
+    color: rgb(86, 92, 105);
+    width: calc(100% - 30px); 
+    padding: 10px;
+    border: none;
+    outline: none;
+    white-space: nowrap; 
+    display: flex; 
+    align-items: center; 
+}
+
+input[type="password"] {
+    width: calc(100% - 40px); 
+}
+
+img {
+    max-width: 30px;
+}
+
+svg {
+    max-width: 25px;
+    margin-right: 10px; 
+}
+
+.a {
+    max-width: 20px;
+}
+
+.la {
+    color: rgb(255, 139, 31);
+}
+
+.dad {
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 200px;
+}
+
+a {
+    color: rgb(127, 133, 141);
+}
+
+.line-2 {
+    width: 100%;
+    border-top: 1px solid #d3d3d3;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.aje {
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .login-form {
+        margin-left: 20px;
+    }
+
+    .cylindrical-box form {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cylindrical-box form svg {
+        flex-shrink: 0; 
+    }
+
+    .cylindrical-box form input {
+        flex: 1; 
+        margin-left: 10px; 
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prin {
+        order: 2;
+        max-width: 300px;
+    }
+
+    .login-form {
+        margin-top: 20px;
+    }
+
+    .cylindrical-box {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; 
+    }
+
+    .cylindrical-box form {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cylindrical-box form svg {
+        flex-shrink: 0; 
+    }
+
+    .cylindrical-box form input {
+        flex: 1; 
+        margin-left: 10px;
+    }
+}
